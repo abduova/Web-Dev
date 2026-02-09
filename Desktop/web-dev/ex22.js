@@ -1,4 +1,4 @@
-alert( 5 % 2 ); // 1, the remainder of 5 divided by 2
+/* alert( 5 % 2 ); // 1, the remainder of 5 divided by 2
 alert( 8 % 3 ); // 2, the remainder of 8 divided by 3
 alert( 8 % 4 ); // 0, the remainder of 8 divided by 4
 
@@ -82,4 +82,4 @@ alert( ++a ); // 2, prefix form returns the new value
 alert( b++ ); // 1, postfix form returns the old value
 
 alert( a ); // 2, incremented once
-alert( b ); // 2, incremented once
+alert( b ); // 2, incremented once */
