@@ -1,7 +1,14 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: ` Welcome to Angular! `,
+  standalone: true,
+  template: `
+    @for (name of names; track name) {
+      <p>{{ name }}</p>
+    }
+  `,
 })
-export class App {}
+export class App {
+  names = ['Anna', 'John', 'Maria'];
+}
