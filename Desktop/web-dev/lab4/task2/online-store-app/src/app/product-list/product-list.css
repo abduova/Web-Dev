@@ -1,0 +1,8 @@
+.products-container {
+  display: flex;
+  flex-wrap: wrap;              /* перенос на новую строку */
+  gap: 24px;                    /* расстояние между карточками */
+  justify-content: center;      /* центрирование по горизонтали */
+  align-items: stretch;         /* одинаковая высота */
+  padding: 24px;
+}

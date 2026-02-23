@@ -1,0 +1,31 @@
+<div *ngIf="product" class="product-card">
+
+  <!-- КАРУСЕЛЬ -->
+  <div class="carousel">
+    <div class="swiper product-swiper" #swiperContainer>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let img of product.images">
+          <img [src]="img" class="carousel-image" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!-- КОНТЕНТ -->
+  <h3 class="product-title">{{ product.name }}</h3>
+  <p class="product-description">{{ product.description }}</p>
+
+  <div class="product-meta">
+    <span class="product-price">${{ product.price }}</span>
+    <span class="product-rating">⭐ {{ product.rating }}</span>
+  </div>
+
+  <!-- КНОПКА ПОДЕЛИТЬСЯ -->
+  <button class="share-btn" (click)="shareProduct()">
+    Share
+  </button>
+
+</div>
