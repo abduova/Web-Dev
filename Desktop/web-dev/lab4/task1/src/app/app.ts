@@ -1,19 +1,22 @@
 import { Component } from '@angular/core';
-import { Child } from './child';
+import { Comments } from './comments';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Child],
+  imports: [Comments],
   template: `
-    <app-child (itemAdded)="onItemAdded()"></app-child>
-    <p>Items added: {{ count }}</p>
+    <div>
+      <h1>How I feel about Angular</h1>
+      <article>
+        Building for the web is fantastic!
+      </article>
+
+      @defer {
+        <comments />
+      }
+
+    </div>
   `,
 })
-export class App {
-  count = 0;
-
-  onItemAdded() {
-    this.count++;
-  }
-}
+export class App {}
