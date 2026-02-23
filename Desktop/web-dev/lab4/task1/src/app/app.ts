@@ -4,11 +4,16 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   standalone: true,
   template: `
-    @for (name of names; track name) {
-      <p>{{ name }}</p>
-    }
+    <section (mouseover)="showSecretMessage()">
+      There's a secret message for you, hover to reveal 👀
+      <p>{{ message }}</p>
+    </section>
   `,
 })
 export class App {
-  names = ['Anna', 'John', 'Maria'];
+  message = '';
+
+  showSecretMessage() {
+    this.message = ' Angular is awesome! ';
+  }
 }
