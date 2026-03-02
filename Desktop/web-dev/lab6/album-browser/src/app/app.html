@@ -1,0 +1,17 @@
+<div>
+  <nav style="width:100%;background:#f8f8f8;padding:1rem 0;box-shadow:0 2px 8px rgba(0,0,0,0.03);margin-bottom:2rem;">
+    <ul style="display:flex;gap:2rem;list-style:none;justify-content:center;margin:0;padding:0;">
+      <li>
+        <a routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" style="text-decoration:none;padding:0.5rem 1rem;">Home</a>
+      </li>
+      <li>
+        <a routerLink="/about" routerLinkActive="active-link" style="text-decoration:none;padding:0.5rem 1rem;">About</a>
+      </li>
+      <li>
+        <a routerLink="/albums" routerLinkActive="active-link" style="text-decoration:none;padding:0.5rem 1rem;">Albums</a>
+      </li>
+    </ul>
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,62 @@
+.albums-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+.loading {
+  color: #1976d2;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.album-link {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.album-link:hover {
+  text-decoration: underline;
+}
+
+.delete-btn {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background: #b71c1c;
+}
+
+.empty {
+  color: #888;
+  margin-top: 2rem;
+  text-align: center;
+}
