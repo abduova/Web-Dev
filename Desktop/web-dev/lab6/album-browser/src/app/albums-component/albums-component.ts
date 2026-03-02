@@ -26,7 +26,8 @@ export class AlbumsComponent implements OnInit {
         console.log('Fetched albums:', albums);
         this.albums = albums;
       },
-      error: () => {
+      error: (err) => {
+        console.error('Error fetching albums:', err);
         this.albums = [];
       }
     });
