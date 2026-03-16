@@ -1,0 +1,14 @@
+<div class="album-detail-container" *ngIf="album">
+	<h2>Album Details</h2>
+	<div><strong>ID:</strong> {{ album.id }}</div>
+	<div><strong>User ID:</strong> {{ album.userId }}</div>
+	<div>
+		<strong>Title:</strong>
+		<input [(ngModel)]="albumTitle" />
+	</div>
+	<button (click)="save()" class="save-btn">Save</button>
+	<a [routerLink]="['/albums', album.id, 'photos']" class="photos-btn">View Photos</a>
+	<button (click)="goBack()" class="back-btn">Back</button>
+</div>
+<div *ngIf="loading" class="loading">Loading album...</div>
+<div *ngIf="error" class="error">Album not found.</div>

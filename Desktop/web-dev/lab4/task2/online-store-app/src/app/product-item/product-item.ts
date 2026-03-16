@@ -17,7 +17,6 @@ export class ProductItem implements AfterViewInit {
   constructor(private cdr: ChangeDetectorRef) {}
 
   ngAfterViewInit(): void {
-    // Ensure DOM is fully updated before initializing Swiper
     this.cdr.detectChanges();
     
     setTimeout(() => {
