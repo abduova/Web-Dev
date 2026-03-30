@@ -1,0 +1,51 @@
+{
+	"id": "69cab7535aacb297d5d7dff6",
+	"name": "New Collection",
+	"timestamp": "2026-03-30T17:48:06.697Z",
+	"collection_id": "3ef6892C80d68CaE2499129A",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-03-30T17:48:03.102Z",
+	"totalFail": 0,
+	"results": [],
+	"count": 1,
+	"totalTime": 0,
+	"collection": {
+		"requests": [
+			{
+				"id": "715674FfF96ad4a5C4aEbbEB"
+			},
+			{
+				"id": "cc6a8aeFAA3bcdfb15ae2B99"
+			},
+			{
+				"id": "DFc61C6bDEec85cBDdc0b8fA"
+			},
+			{
+				"id": "2CFDc2aBde6cF9BBe708c7ed"
+			},
+			{
+				"id": "F8B0178687DAaf2cDA7E6F87"
+			},
+			{
+				"id": "90928bDf7A60cFA14eadcfDf"
+			},
+			{
+				"id": "ED9455c9Efb1d557C4173ef7"
+			},
+			{
+				"id": "3c348Df6A2747B5BFAc10FC5"
+			},
+			{
+				"id": "BDdbA7e6586Ea1AeB6E1BAAe"
+			},
+			{
+				"id": "d4eBDe26CE0EC0d6aB0A5a74"
+			}
+		]
+	}
+}
